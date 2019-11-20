@@ -9,7 +9,7 @@ function PlayerControls() {
     <>
       <div className="box controls has-background-grey-dark">
         <div className="current-track has-text-light">
-          <marquee>{currentTrackName}</marquee>
+          <blockquote>{currentTrackName}</blockquote>
         </div>
         <div>
           <button className="button has-text-light has-background-grey-dark" onClick={playPreviousTrack} disabled={!currentTrackName}>
