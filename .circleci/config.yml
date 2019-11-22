@@ -37,5 +37,5 @@ jobs:
       - run: aws --version
       - run: aws s3 ls
       - run: aws s3 mb s3://xz-react-hooks-music || true
-      - run: aws s3 sync build/ s3://xz-react-hooks-music --delete
+      - run: aws s3 sync build/ s3://xz-react-hooks-music --delete --policy public-read
       # - run: aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths '/*'
